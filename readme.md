@@ -17,10 +17,3 @@ except that bin edges are not shown, and one line is shown per ROI.
 ![Combined plot example](plots_examples_frozen/combined_plot1_Flamindo2_.png)
 
 ![Combined plot example](plots_examples_frozen/combined_plot2_Flamindo2_.png)
-
-## Further thinking
-
-There might be more elegant solutions.
-It’s still not perfect, as the bins at some point misalign with the interval between measurements. This causes a spike in the data if the data is different from one sample to another.
-
-An alternative might be to slide over the time, and set a bin edge every time all samples have had a timepoint in that bin. 
