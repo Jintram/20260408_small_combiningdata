@@ -13,8 +13,8 @@ import matplotlib.pyplot as plt
 # Condition search term for files
 DIR_DATA      = "/Users/m.wehrens/Data_UVA/_BIODSC_smallconsults/20260408_Seb_combiningdata/"
 STR_CONDITION = "_cAMPinG1_"
-STR_CONDITION = "_Flamindo2_"
-STR_CONDITION = "_GFLamp2_"
+# STR_CONDITION = "_Flamindo2_"
+# STR_CONDITION = "_GFLamp2_"
 
 # Make a plot subdir
 os.makedirs("plots", exist_ok=True)
@@ -62,7 +62,7 @@ mean_interval = np.mean([np.max(df['Time'])/(len(np.unique(df['Time']))-1) for d
 # Determine the longest time an experiment took
 total_time = np.max(df['Time'])
 # Now set time bin edges accordingly
-time_bin_edges = np.arange(0, total_time + mean_interval, mean_interval) - mean_interval/2
+time_bin_edges = np.arange(0, total_time + 2*mean_interval, mean_interval) - mean_interval/2
 # Determine bin centers
 time_bin_centers = (time_bin_edges[:-1] + time_bin_edges[1:]) / 2
 
