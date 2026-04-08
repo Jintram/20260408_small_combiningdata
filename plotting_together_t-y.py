@@ -13,8 +13,8 @@ import matplotlib.pyplot as plt
 # Condition search term for files
 DIR_DATA      = "/Users/m.wehrens/Data_UVA/_BIODSC_smallconsults/20260408_Seb_combiningdata/"
 STR_CONDITION = "_cAMPinG1_"
-STR_CONDITION = "_Flamindo2_"
-STR_CONDITION = "_GFLamp2_"
+# STR_CONDITION = "_Flamindo2_"
+# STR_CONDITION = "_GFLamp2_"
 
 # Make a plot subdir
 os.makedirs("plots", exist_ok=True)
@@ -111,6 +111,7 @@ ax.errorbar(x=df_plot[('Time', 'mean')],
 ax.legend().remove()
 plt.tight_layout()
 fig.savefig("plots/combined_plot1" + STR_CONDITION + ".pdf")
+fig.savefig("plots/combined_plot1" + STR_CONDITION + ".png", dpi=600)
 
 # Plot in style 2
 fig, ax = plt.subplots(figsize=(10*cm_to_inch, 5*cm_to_inch))
@@ -135,5 +136,6 @@ ax.legend().remove()
 plt.tight_layout()
 # Save the plot
 fig.savefig("plots/combined_plot2" + STR_CONDITION + ".pdf")
+fig.savefig("plots/combined_plot2" + STR_CONDITION + ".png", dpi=600)
 
 # %%
