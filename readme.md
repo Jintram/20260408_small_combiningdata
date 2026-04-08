@@ -1,6 +1,6 @@
 
 
-# Combining different datasets in an y(t) plot
+# Combining different datasets in a y(t) plot
 
 .. when t series are not exactly consistent. 
 
